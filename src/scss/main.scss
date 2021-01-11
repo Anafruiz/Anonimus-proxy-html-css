@@ -1,8 +1,98 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
+@import "core/variables";
+@import "core/reset";
+/*@import 'components/code';
 @import 'components/links';
 @import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'pages/index';
+@import 'pages/index';*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-image: url("../images/cover.jpg");
+  background-blend-mode: multiply;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-header-footer;
+
+  &__tittle {
+    text-transform: uppercase;
+    font-family: $font-tittle;
+    font-size: 42px;
+    width: 290px;
+    height: 110px;
+    line-height: 1.31;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    margin: 284px 15px 10px 15px;
+  }
+  &__subtittle {
+    font-family: $font-text;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0px 15px 143px 15px;
+  }
+  &__subtittle:first-letter {
+    text-transform: uppercase;
+  }
+}
+.section1 {
+  margin: 30px 15px 0px 15px;
+  background-color: $colorback-section1;
+  text-transform: capitalize;
+  line-height: 30px;
+
+  &__tips {
+    font-family: $font-text;
+    font-weight: normal;
+    font-size: 14px;
+    color: #8ccbea;
+    margin: 0px 215px 1px 0px;
+    width: 90px;
+  }
+  &__tittle {
+    font-family: $font-tittle;
+    font-size: 24px;
+    margin: 0px 0px 15px 0px;
+  }
+  &__p {
+    text-transform: lowercase;
+    font-family: $font-text;
+    font-size: 18px;
+    color: $color-p1;
+    margin: 0px 0px 30px 0px;
+  }
+  /*&__p:first-letter {
+    text-transform: capitalize;
+  }*/
+
+  &__button {
+    font-family: $font-text;
+    text-transform: capitalize;
+    font-weight: 500px;
+    font-size: 20px;
+    width: 76px;
+    height: 45px;
+    margin: 0px 229px 45px 0px;
+    padding: 0px 26px 0px 26px;
+    color: $color-button;
+    border-radius: 22.5px;
+    border: solid 2px $color-button;
+  }
+  &__p:first-letter {
+    text-transform: uppercase;
+  }
+}
+.section2 {
+  background-color: plum;
+}
+.footer {
+  background-color: powderblue;
+}
