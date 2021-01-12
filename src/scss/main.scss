@@ -23,28 +23,29 @@
   align-items: center;
   text-align: center;
   color: $color-header-footer;
-  &__nav--menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: $color-menu;
-    width: 44px;
-    height: 44px;
-    padding: 14px;
-    z-index: 99;
+  &__nav {
+    &--menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: $color-menu;
+      width: 44px;
+      height: 44px;
+      padding: 14px;
+      z-index: 99;
+    }
   }
-  &__img--arrow {
+  &__img {
     background-color: $colorback-section1;
     padding: 18px 12px 15.3px 13px;
     border-radius: 22.5px;
-    margin: 45px 137px 53px 138px;
+    margin: 45px 0px 53px 0px;
   }
 
   &__tittle {
     text-transform: uppercase;
     font-family: $font-tittle;
     font-size: 42px;
-    width: 290px;
     height: 110px;
     line-height: 1.31;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -60,6 +61,7 @@
     text-transform: uppercase;
   }
 }
+
 .section1 {
   margin: 30px 15px 0px 15px;
   background-color: $colorback-section1;
@@ -97,16 +99,25 @@
     font-size: 20px;
     width: 76px;
     height: 45px;
-    margin: 0px 229px 45px 0px;
+    margin: 0px 0px 45px 0px;
     padding: 0px 26px 0px 26px;
     color: $color-button;
     border-radius: 22.5px;
     border: solid 2px $color-button;
+    transition: background-color color border-radius 1s ease;
+    &:hover {
+      background-color: navajowhite;
+      border-style: solid;
+      border-color: #95a5a6;
+      border-color: #000;
+      color: oldlace;
+    }
   }
   &__p:first-letter {
     text-transform: uppercase;
   }
 }
+
 .section2 {
   background-color: $colorback-section2;
   display: grid;
@@ -131,7 +142,6 @@
       font-family: $font-tittle;
       font-size: 18px;
       font-weight: bold;
-      margin: 0px 68px 0px 68px;
     }
 
     &--p {
@@ -146,14 +156,17 @@
     text-transform: capitalize;
     font-weight: 500px;
     font-size: 20px;
-    margin: 0px 97.5px 60px 98.5px;
-    padding: 0px 29.5px 0px 30px;
     color: $colorback-section1;
     background-color: $color-button;
     border-radius: 22.5px;
     border: solid 2px $color-button;
-    width: 124px;
-    height: 45px;
+    margin-bottom: 60px;
+    padding: 10px;
+    transition: background-color font-size 1s ease;
+    &:hover {
+      background-color: burlywood;
+      font-size: 24px;
+    }
   }
 }
 .footer {
@@ -166,27 +179,27 @@
   text-transform: uppercase;
   font-family: $font-text;
   text-align: center;
-
-  &__list--link {
-    margin: 0px 123px 0px 124px;
-    list-style: none;
-    color: $color-header-footer;
-    line-height: 1.88;
-    font-size: 16px;
+  &__list {
+    margin-bottom: 30px;
+    &--link {
+      margin: 0px 53px 0px 54px;
+      list-style: none;
+      color: $color-header-footer;
+      line-height: 1.88;
+      font-size: 16px;
+    }
   }
-  &__img--arrow {
-    position: relative;
-    top: 50%;
-    transform: translate(0px, -10px);
+  &__img {
     background-color: $colorback-section1;
     border-radius: 22.5px;
-    width: 20.6px;
-    height: 24px;
-    background-color: $color-header-footer;
+    padding: 11px 12.4px 10px 12px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -22px);
   }
   &__copy {
     font-size: 14px;
-    margin: 30px 122px 0px 121px;
+    margin: 30px 51px 0px 52px;
     height: 30px;
   }
   &__welove {
