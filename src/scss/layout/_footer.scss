@@ -33,6 +33,7 @@
     top: 50%;
     transform: translate(0, -22px);
   }
+
   &__copy {
     font-size: 14px;
     margin: 30px 51px 0px 52px;
@@ -49,7 +50,6 @@
 }
 @media all and(min-width:768px) {
   .footer__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
   }
 }

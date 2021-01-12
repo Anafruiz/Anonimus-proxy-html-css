@@ -61,3 +61,19 @@
     margin-bottom: 45px;
   }
 }
+@media all and (min-width: 1200px) {
+  .header__tittle {
+    font-size: 100px;
+    line-height: 1.32;
+    width: 730px;
+    margin: 384px 275px 120px 275px;
+  }
+  .header__subtittle {
+    font-size: 24px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 10px;
+  }
+  .header__img {
+    margin-bottom: 45px;
+  }
+}

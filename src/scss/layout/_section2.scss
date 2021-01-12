@@ -65,6 +65,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .section2__tittle {
+    font-size: 26px;
+  }
   .section2__container--tittle {
     font-size: 24px;
     margin-bottom: 14px;
@@ -73,5 +76,18 @@
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media all and(min-width:1200px) {
+  .section2__tittle {
+    font-size: 32px;
+  }
+  .section2 {
+    padding-left: 81.2px;
+    padding-right: 85px;
+  }
+  .section2__container--p {
+    width: 353.8px;
   }
 }
