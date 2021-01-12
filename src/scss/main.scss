@@ -13,8 +13,9 @@
 }
 .header {
   background-image: url("../images/cover.jpg");
+  background-position: center;
   background-blend-mode: multiply;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,22 @@
   align-items: center;
   text-align: center;
   color: $color-header-footer;
+  &__nav--menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $color-menu;
+    width: 44px;
+    height: 44px;
+    padding: 14px;
+    z-index: 99;
+  }
+  &__img--arrow {
+    background-color: $colorback-section1;
+    padding: 18px 12px 15.3px 13px;
+    border-radius: 22.5px;
+    margin: 45px 137px 53px 138px;
+  }
 
   &__tittle {
     text-transform: uppercase;
@@ -37,7 +54,7 @@
     font-family: $font-text;
     font-size: 16px;
     font-weight: normal;
-    margin: 0px 15px 143px 15px;
+    margin: 0px 15px 0px 15px;
   }
   &__subtittle:first-letter {
     text-transform: uppercase;
@@ -91,8 +108,93 @@
   }
 }
 .section2 {
-  background-color: plum;
+  background-color: $colorback-section2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  &__tittle {
+    grid-column: 1/4;
+    font-family: $font-tittle;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color-section2;
+    padding-top: 30px;
+    margin: 0px 15px 45px 15px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  &__container {
+    grid-column: 1/4;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 30px;
+    &--tittle {
+      font-family: $font-tittle;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0px 68px 0px 68px;
+    }
+
+    &--p {
+      font-family: $font-text;
+      font-size: 18px;
+      margin: 0px 70px 45px 70px;
+    }
+  }
+  &__button {
+    grid-column: 2/3;
+    font-family: $font-text;
+    text-transform: capitalize;
+    font-weight: 500px;
+    font-size: 20px;
+    margin: 0px 97.5px 60px 98.5px;
+    padding: 0px 29.5px 0px 30px;
+    color: $colorback-section1;
+    background-color: $color-button;
+    border-radius: 22.5px;
+    border: solid 2px $color-button;
+    width: 124px;
+    height: 45px;
+  }
 }
 .footer {
-  background-color: powderblue;
+  background-color: $colorback-footer;
+  color: $color-header-footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: $font-text;
+  text-align: center;
+
+  &__list--link {
+    margin: 0px 123px 0px 124px;
+    list-style: none;
+    color: $color-header-footer;
+    line-height: 1.88;
+    font-size: 16px;
+  }
+  &__img--arrow {
+    position: relative;
+    top: 50%;
+    transform: translate(0px, -10px);
+    background-color: $colorback-section1;
+    border-radius: 22.5px;
+    width: 20.6px;
+    height: 24px;
+    background-color: $color-header-footer;
+  }
+  &__copy {
+    font-size: 14px;
+    margin: 30px 122px 0px 121px;
+    height: 30px;
+  }
+  &__welove {
+    text-transform: lowercase;
+    font-size: 14px;
+    margin: 0px 15px 45px 15px;
+    &--heart {
+      color: $color-button;
+    }
+  }
 }

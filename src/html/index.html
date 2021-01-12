@@ -9,19 +9,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
 
 </head>
 
 <body>
-  <header class="header">
-
-
+  <header class="header" id="page">
+    <nav class="header__nav">
+      <a href="https://www.adalab.es" target="_blank"><img class="header__nav--menu" src="./assets/images/ico-menu.svg"
+          alt="menu-page" /><a>
+    </nav>
     <h1 class="header__tittle">
       anonimus proxy
     </h1>
     <h2 class="header__subtittle">
       in hac habitasse latea dictumst
     </h2>
+    <a href="#reasons" title="Reasons to purchase"><img class="header__img--arrow"
+        src="./assets/images/ico-scroll-down.svg" /></a>
+
   </header>
 
   <main class="main">
@@ -30,61 +36,76 @@
       <article class="section1__main">
         <h2 class="section1__tittle">looking through a window</h2>
         <p class="section1__p">
-          donec accumsan,nulla ut volutpat porttitor,quam odio tempus felis,at luctus ex diam nec lectus.Vivamus semper
+          donec accumsan,nulla ut volutpat porttitor,quam odio tempus felis,at luctus ex diam nec lectus.Vivamus
+          semper
           sodales
           rutrum.
         </p>
         <button class="section1__button">go</button>
       </article>
     </section>
-    <section class="section2">
+    <section id="reasons" class="section2">
       <h2 class="section2__tittle">
         3 reasons to purchase
       </h2>
-      <article class="section2__container1">
-        <h3 class="section2__container1--tittle">ut sed metus</h3>
-        <p class="section2__container1--p">lorem ipsum dolor sit amet,consecteur</p>
+      <article class="section2__container">
+        <h3 class="section2__container--tittle">ut sed metus</h3>
+        <p class="section2__container--p">lorem ipsum dolor sit amet,consecteur</p>
       </article>
-      <article class="section2__container2">
-        <h3 class="section2__container2--tittle">
+      <article class="section2__container">
+        <h3 class="section2__container--tittle">
           curabitur ac erat
         </h3>
-        <p class="section2__container2--p">
+        <p class="section2__container--p">
           mauris mattis urna quis lorem molestie
         </p>
       </article>
-      <article class="section2__container3">
-        <h3 class="section2__container3--tittle">
+      <article class="section2__container">
+        <h3 class="section2__container--tittle">
           morbi dictum
         </h3>
-        <p class="section2__container3--p">
+        <p class="section2__container--p">
           aliquam in dolor et dolor tincidunt
         </p>
       </article>
       <button class="section2__button">more reasons</button>
+
+
     </section>
   </main>
   <footer class="footer">
+    <a href="#page" title="back to page"><img class="footer__img--arrow" src="./assets/images/ico-arrow.svg" /></a>
     <nav>
       <ul class="footer__list">
-        <li class="footer__list--link">
-          articles
-          books
-          events
-          reasons
-          tips
-          twitter
-          instagram
-          mastodon.social
-        </li>
-
+        <a href="https://adalab.es" target="_blank">
+          <li class="footer__list--link"> articles</li>
+        </a>
+        <a href="https://adalab.es" target="_blank">
+          <li class="footer__list--link"> books</li>
+        </a>
+        <a href="https://adalab.es" target="_blank">
+          <li class="footer__list--link"> events</li>
+        </a>
+        <a href="https://adalab.es" target="_blank">
+          <li class="footer__list--link"> reasons</li>
+        </a>
+        <a href="https://adalab.es" target="_blank">
+          <li class="footer__list--link">tips</li>
+        </a>
+        <a href="https://adalab.es" target="_blank">
+          <li class="footer__list--link"> twitter</li>
+        </a>
+        <a href="https://adalab.es" target="_blank">
+          <li class="footer__list--link"> instagram</li>
+        </a>
+        <a href="https://adalab.es" target="_blank">
+          <li class="footer__list--link"> mastodon.social</li>
+        </a>
       </ul>
-
-
     </nav>
-    &copy2021
-    <div class="welove">
-      we components
+    <small class="footer__copy">&copy2021</small>
+    <div class="footer__welove">
+      we <span class="footer__welove--heart">&#x2764</span> components
     </div>
 
   </footer>
