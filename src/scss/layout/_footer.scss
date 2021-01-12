@@ -8,15 +8,22 @@
   text-transform: uppercase;
   font-family: $font-text;
   text-align: center;
+
   &__list {
     margin-bottom: 30px;
-    &--link {
-      margin: 0px 53px 0px 54px;
-      list-style: none;
-      color: $color-header-footer;
-      line-height: 1.88;
-      font-size: 16px;
-    }
+  }
+
+  &__list--link {
+    margin: 0px 53px 0px 54px;
+    list-style: none;
+    color: $color-header-footer;
+    line-height: 1.88;
+    font-size: 16px;
+  }
+  &__list--item {
+    list-style: none;
+    text-decoration: none;
+    color: $color-header-footer;
   }
   &__img {
     background-color: $colorback-section1;
@@ -38,5 +45,11 @@
     &--heart {
       color: $color-button;
     }
+  }
+}
+@media all and(min-width:768px) {
+  .footer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

@@ -53,3 +53,16 @@
     text-transform: uppercase;
   }
 }
+@media all and(min-width:768px) {
+  .section1 {
+    margin-right: 39px;
+    margin-left: 39px;
+  }
+  .section1__tittle {
+    font-size: 26px;
+  }
+  .section1__p {
+    font-size: 20px;
+    width: 690px;
+  }
+}
