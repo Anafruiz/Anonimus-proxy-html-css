@@ -1,0 +1,50 @@
+.header {
+  background-image: url("../images/cover.jpg");
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-header-footer;
+  &__nav {
+    &--menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: $color-menu;
+      width: 44px;
+      height: 44px;
+      padding: 14px;
+      z-index: 99;
+    }
+  }
+  &__img {
+    background-color: $colorback-section1;
+    padding: 18px 12px 15.3px 13px;
+    border-radius: 22.5px;
+    margin: 45px 0px 53px 0px;
+  }
+
+  &__tittle {
+    text-transform: uppercase;
+    font-family: $font-tittle;
+    font-size: 42px;
+    height: 110px;
+    line-height: 1.31;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    margin: 284px 15px 10px 15px;
+  }
+  &__subtittle {
+    font-family: $font-text;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0px 15px 0px 15px;
+  }
+  &__subtittle:first-letter {
+    text-transform: uppercase;
+  }
+}

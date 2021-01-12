@@ -1,0 +1,51 @@
+.section2 {
+  background-color: $colorback-section2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  &__tittle {
+    grid-column: 1/4;
+    font-family: $font-tittle;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color-section2;
+    padding-top: 30px;
+    margin: 0px 15px 45px 15px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  &__container {
+    grid-column: 1/4;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 30px;
+    &--tittle {
+      font-family: $font-tittle;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &--p {
+      font-family: $font-text;
+      font-size: 18px;
+      margin: 0px 70px 45px 70px;
+    }
+  }
+  &__button {
+    grid-column: 2/3;
+    font-family: $font-text;
+    text-transform: capitalize;
+    font-weight: 500px;
+    font-size: 20px;
+    color: $colorback-section1;
+    background-color: $color-button;
+    border-radius: 22.5px;
+    border: solid 2px $color-button;
+    margin-bottom: 60px;
+    padding: 10px;
+    transition: background-color font-size 1s ease;
+    &:hover {
+      background-color: burlywood;
+      font-size: 24px;
+    }
+  }
+}

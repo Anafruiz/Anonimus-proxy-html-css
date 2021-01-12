@@ -1,0 +1,55 @@
+.section1 {
+  margin: 30px 15px 0px 15px;
+  background-color: $colorback-section1;
+  text-transform: capitalize;
+  line-height: 30px;
+
+  &__tips {
+    font-family: $font-text;
+    font-weight: normal;
+    font-size: 14px;
+    color: #8ccbea;
+    margin: 0px 215px 1px 0px;
+    width: 90px;
+  }
+  &__tittle {
+    font-family: $font-tittle;
+    font-size: 24px;
+    margin: 0px 0px 15px 0px;
+  }
+  &__p {
+    text-transform: lowercase;
+    font-family: $font-text;
+    font-size: 18px;
+    color: $color-p1;
+    margin: 0px 0px 30px 0px;
+  }
+  /*&__p:first-letter {
+        text-transform: capitalize;
+      }*/
+
+  &__button {
+    font-family: $font-text;
+    text-transform: capitalize;
+    font-weight: 500px;
+    font-size: 20px;
+    width: 76px;
+    height: 45px;
+    margin: 0px 0px 45px 0px;
+    padding: 0px 26px 0px 26px;
+    color: $color-button;
+    border-radius: 22.5px;
+    border: solid 2px $color-button;
+    transition: background-color color border-radius 1s ease;
+    &:hover {
+      background-color: navajowhite;
+      border-style: solid;
+      border-color: #95a5a6;
+      border-color: #000;
+      color: oldlace;
+    }
+  }
+  &__p:first-letter {
+    text-transform: uppercase;
+  }
+}
