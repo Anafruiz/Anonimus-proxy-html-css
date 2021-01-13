@@ -1,3 +1,20 @@
+.icon {
+  position: relative;
+  &__footer {
+    background-color: $colorback-section1;
+    border-radius: 22.5px;
+    padding: 11px 12.4px 10px 12px;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and(min-width:768px) {
+    }
+  }
+}
+
 .footer {
   background-color: $colorback-footer;
   color: $color-header-footer;
@@ -14,23 +31,14 @@
     align-items: flex-start;
   }
 
-  &__icon {
-    background-color: $colorback-section1;
-    border-radius: 22.5px;
-    padding: 11px 12.4px 10px 12px;
-    position: relative;
-    top: 50%;
-    transform: translate(0, -22px);
-    @media all and(min-width:768px) {
-    }
-  }
-
   &__list {
+    margin-top: 37px;
     margin-bottom: 30px;
     @media all and(min-width:768px) {
       margin-top: 45px;
       margin-right: 30px;
       margin-bottom: 45px;
+      text-align: left;
     }
 
     &--link {
@@ -51,6 +59,7 @@
       margin-top: 45px;
       margin-right: 39px;
       margin-bottom: 105px;
+      text-align: left;
     }
     @media all and(min-width:1200px) {
       margin-right: 370px;
