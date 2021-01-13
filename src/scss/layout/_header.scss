@@ -1,11 +1,11 @@
 .header {
   background-image: url("../images/cover.jpg");
   background-position: center;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   color: $color-header-footer;
@@ -39,21 +39,19 @@
     font-family: $font-tittle;
     font-size: 42px;
     width: 290px;
-    height: 110px;
     line-height: 1.31;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    margin: 284px 15px 10px 15px;
+    margin: 0px 0px 10px 0px;
     @media all and (min-width: 768px) {
       font-size: 80px;
       width: 690px;
-      margin: 384px 39px 172px 39px;
+      margin: 0px 0px 20px 0px;
     }
     @media all and (min-width: 1280px) {
       font-size: 100px;
       line-height: 1.32;
       width: 730px;
-      height: 264px;
-      margin: 384px 275px 10px 275px;
+      margin: 0px 0px 0px 0px;
     }
   }
   &__subtittle {
@@ -63,7 +61,6 @@
     margin: 0px 15px 0px 15px;
     @media all and (min-width: 768px) {
       font-size: 24px;
-      margin-bottom: 30px;
     }
     @media all and (min-width: 1280px) {
       font-size: 24px;
