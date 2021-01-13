@@ -7,7 +7,7 @@
     margin-right: 39px;
     margin-left: 39px;
   }
-  @media all and(min-width:1200px) {
+  @media all and(min-width:1280px) {
     margin-right: 275px;
     margin-left: 275px;
   }
@@ -19,7 +19,7 @@
     color: #8ccbea;
     margin: 0px 215px 1px 0px;
     width: 90px;
-    @media all and(min-width:1200px) {
+    @media all and(min-width:1280px) {
       font-size: 16px;
       width: 360px;
     }
@@ -32,7 +32,7 @@
       font-size: 26px;
       margin: 0px 0px 30px 0px;
     }
-    @media all and(min-width:1200px) {
+    @media all and(min-width:1280px) {
       font-size: 32px;
       margin: 0px 0px 30px 0px;
     }
@@ -47,7 +47,7 @@
       font-size: 20px;
       width: 690px;
     }
-    @media all and(min-width:1200px) {
+    @media all and(min-width:1280px) {
       width: 730px;
     }
   }
@@ -70,12 +70,13 @@
     &:hover {
       background-color: navajowhite;
       border-style: solid;
-      border-color: #95a5a6;
       border-color: #000;
       color: oldlace;
     }
-    @media all and(min-width:1200px) {
+    @media all and(min-width:768px) {
       margin: 0px 0px 60px 0px;
+    }
+    @media all and(min-width:1280px) {
       width: 160px;
     }
   }
