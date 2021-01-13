@@ -32,6 +32,9 @@
       font-family: $font-tittle;
       font-size: 18px;
       font-weight: bold;
+      @media all and(min-width:768px) {
+        font-size: 20px;
+      }
     }
     &--tittle:first-letter {
       text-transform: uppercase;
